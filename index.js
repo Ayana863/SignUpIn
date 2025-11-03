@@ -10,7 +10,8 @@ const  pfServer=express()
 pfServer.use(cors())
 
 pfServer.use(express.json())
-pfServer.use(router)
+pfServer.use('/user', router) 
+
 
 
 
